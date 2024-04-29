@@ -6,8 +6,114 @@ a.btn-custom {
     border: 1px solid rgb(255, 186, 52);
     background-color: rgb(255, 186, 52);
     transition: all .3s;
+    text-decoration: none;
 }
 
 a.btn-custom:hover {
     background-color: rgb(243, 168, 19);
+    text-decoration: none;
+}
+
+a.btn-custom.big {
+    padding: 12px 45px !important;
+    line-height: 56px;
+}
+
+.shadow, .hover-shadow:hover {
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
+}
+
+.description {
+    font-size: 18px;
+}
+
+
+header nav.navbar {
+    height: 90px;
+}
+
+header nav.navbar a.nav-item {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+
+section#head {
+    background-size: 100% auto;
+    background-position: center;
+    margin: 0 0 50px;
+    padding: 200px 0;
+}
+
+section#head .head-text-wrapper {
+    margin-left: 125px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 35px 25px;
+}
+
+
+section#invitation {
+    margin: 100px 0;
+    /*color: white;*/
+    padding: 25px;
+    /*background-color: #2a82eb;*/
+}
+
+section#invitation .flex-wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+section#invitation .donation-img {
+    padding: 40px;
+}
+
+
+section#donation {
+    color: white;
+    background-color: #2a82eb;
+    padding: 60px 0;
+}
+
+section#donation .donation-methods {
+    margin-top: 50px;
+}
+
+section#donation .donation-methods .donation-method {
+    width: 120px;
+    height: 110px;
+    float: left;
+    margin-right: 25px;
+    text-align: center;
+    transition: all .3s;
+}
+
+section#donation .donation-methods .donation-method img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+section#donation .donation-methods .donation-method span {
+    display: inline-block;
+    margin-top: 12px;
+    color: white;
+}
+
+footer .social-networks {
+    margin-top: 15px;
+}
+
+footer .social-networks a {
+    font-size: 36px;
+    text-decoration: none;
+}
+
+footer .contacts .general span {
+    display: block;
+    margin-bottom: 5px;
 }
