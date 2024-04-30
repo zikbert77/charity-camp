@@ -23,8 +23,13 @@ class AppAsset extends AssetBundle
         'css/site.css',
         'css/fonts.css',
         'plugins/icofont/icofont.min.css',
+        'plugins/splide/splide.min.css',
+        'plugins/fancybox/fancybox.min.css',
     ];
     public $js = [
+        'js/index.js',
+        'plugins/splide/splide.min.js',
+        'plugins/fancybox/fancybox.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

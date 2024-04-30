@@ -1,3 +1,7 @@
+a {
+    text-decoration: none !important;
+}
+
 a.btn-custom {
     color: black !important;
     padding: 5px 25px !important;
@@ -80,16 +84,18 @@ section#donation {
 }
 
 section#donation .donation-methods {
-    margin-top: 50px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
 }
 
 section#donation .donation-methods .donation-method {
     width: 120px;
     height: 110px;
-    float: left;
     margin-right: 25px;
     text-align: center;
     transition: all .3s;
+    border-radius: 20px;
 }
 
 section#donation .donation-methods .donation-method img {
@@ -99,10 +105,24 @@ section#donation .donation-methods .donation-method img {
 }
 
 section#donation .donation-methods .donation-method span {
-    display: inline-block;
+    display: block;
     margin-top: 12px;
     color: white;
 }
+
+
+section#gallery {
+    margin: 50px 0;
+}
+
+section#gallery .gallery-box img {
+    width: 300px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+
 
 footer .social-networks {
     margin-top: 15px;

@@ -3,6 +3,21 @@
 /** @var yii\web\View $this */
 
 $this->title = 'My Yii Application';
+
+$imgList = [
+        '/img/childrens6.jpg',
+        '/img/childrens6.jpg',
+        '/img/childrens6.jpg',
+        '/img/childrens6.jpg',
+        '/img/childrens6.jpg',
+        '/img/childrens6.jpg',
+        '/img/childrens6.jpg',
+        '/img/childrens6.jpg',
+        '/img/childrens6.jpg',
+        '/img/childrens6.jpg',
+        '/img/childrens6.jpg',
+        '/img/childrens6.jpg',
+];
 ?>
 
 <section id="head" style="background-image: url('../img/childrens6.jpg')">
@@ -88,8 +103,10 @@ $this->title = 'My Yii Application';
     <div class="container">
         <div class="row">
             <div class="col col-12">
-                <h2 class="roboto-black">Choose your option to become part of our mission:</h2>
-                <div class="donation-methods roboto-light">
+                <div class="text-center">
+                    <h2 class="roboto-black">Choose your option to become part of our mission</h2>
+                </div>
+                <div class="donation-methods roboto-light clearfix">
                     <div class="donation-method hover-shadow">
                         <a href="">
                             <img src="/img/donation-methods/cc.png" alt="Credit Card" title="Credit Card">
@@ -107,6 +124,36 @@ $this->title = 'My Yii Application';
                             <img src="/img/donation-methods/monobank.jpeg" alt="Monobank" title="Monobank">
                             <span>Monobank</span>
                         </a>
+                    </div>
+                    <div class="donation-method hover-shadow">
+                        <a href="">
+                            <img src="/img/donation-methods/Bitcoin.svg" alt="Monobank" title="Crypto">
+                            <span>Crypto</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12">
+                <h2 class="light header headline text-center">Фотогалерея</h2>
+                <div class="gallery-box">
+                    <div class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <?php foreach ($imgList as $img): ?>
+                                    <li class="splide__slide" data-fancybox="gallery" data-src="<?= $img ?>">
+                                        <img src="<?= $img ?>" loading="lazy" alt="Галерея | Title" title="Галерея | Title">
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
