@@ -22,6 +22,7 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'css/fonts.css',
+        'css/responsive.css',
         'plugins/icofont/icofont.min.css',
         'plugins/splide/splide.min.css',
         'plugins/fancybox/fancybox.min.css',

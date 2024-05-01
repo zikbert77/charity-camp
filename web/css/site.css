@@ -59,6 +59,16 @@ section#head .head-text-wrapper {
 }
 
 
+section#about {
+    margin: 100px 0;
+}
+
+section#about .about-img img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+
 section#invitation {
     margin: 100px 0;
     /*color: white;*/
@@ -112,7 +122,11 @@ section#donation .donation-methods .donation-method span {
 
 
 section#gallery {
-    margin: 50px 0;
+    margin: 100px 0;
+}
+
+section#gallery h2 {
+    margin-bottom: 25px;
 }
 
 section#gallery .gallery-box img {
@@ -123,6 +137,9 @@ section#gallery .gallery-box img {
 }
 
 
+footer a {
+    color: black;
+}
 
 footer .social-networks {
     margin-top: 15px;
@@ -130,10 +147,16 @@ footer .social-networks {
 
 footer .social-networks a {
     font-size: 36px;
-    text-decoration: none;
 }
 
 footer .contacts .general span {
     display: block;
     margin-bottom: 5px;
+}
+
+footer .links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }

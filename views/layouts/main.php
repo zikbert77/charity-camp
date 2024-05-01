@@ -61,21 +61,23 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <footer id="footer" class="mt-auto py-3 bg-light">
     <div class="container">
         <div class="row text-muted">
-            <div class="col-md-4 text-center text-md-start">
-                <div class="brand">
-                    &copy; My Company <?= date('Y') ?><br>
-                    All Rights Reserved
-                </div>
-                <div class="social-networks">
-                    <a href="" class="social-network">
-                        <i class="icofont-instagram"></i>
-                    </a>
-                    <a href="" class="social-network">
-                        <i class="icofont-facebook"></i>
-                    </a>
+            <div class="col-xs-12 col-md-4 text-center text-md-start order-3 order-md-0">
+                <div class="info">
+                    <div class="brand">
+                        &copy; My Company <?= date('Y') ?><br>
+                        All Rights Reserved
+                    </div>
+                    <div class="social-networks">
+                        <a href="" class="social-network">
+                            <i class="icofont-instagram"></i>
+                        </a>
+                        <a href="" class="social-network">
+                            <i class="icofont-facebook"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 text-center text-md-end">
+            <div class="col-xs-12 col-md-4 text-center text-md-end">
                 <div class="contacts">
                     <div class="header">
                         <h4>Our Contacts</h4>
@@ -83,24 +85,15 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     <div class="general">
                         <span>м.Луцьк, Волі 14б</span>
                         <span>+380 99 787 76 78</span>
-                        <span>test@email.com</span>
+                        <a href="mailto:test@email.com">test@email.com</a>
                     </div>
                     <div class="social-networks"></div>
                 </div>
             </div>
-            <div class="col-md-4 text-right">
+            <div class="col-xs-12 col-md-4 text-right order-2">
                 <div class="links">
                     <div class="link">
                         <a href="" class="btn-custom big">Make a donation</a>
-                    </div>
-                    <div class="link">
-                        <a href="">About</a>
-                    </div>
-                    <div class="link">
-                        <a href="">Privacy</a>
-                    </div>
-                    <div class="link">
-                        <a href="">Terms And Conditions</a>
                     </div>
                 </div>
             </div>

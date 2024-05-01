@@ -23,7 +23,7 @@ $imgList = [
 <section id="head" style="background-image: url('../img/childrens6.jpg')">
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-6">
+            <div class="col-xs-12 col-lg-6">
                 <div class="head-text-wrapper shadow">
                     <h1 class="text-center roboto-black">Working together to stop the war in Ukraine</h1>
                     <div class="text-center">
@@ -33,7 +33,7 @@ $imgList = [
                     </div>
                 </div>
             </div>
-            <div class="col col-6"></div>
+            <div class="col-xs-12 col-lg-6"></div>
         </div>
     </div>
 </section>
@@ -41,10 +41,12 @@ $imgList = [
 <section id="about">
     <div class="container">
         <div class="row">
-            <div class="col col-6">
-
+            <div class="col-xs-12 col-lg-6">
+                <div class="about-img">
+                    <img src="img/24.png" class="shadow" alt="">
+                </div>
             </div>
-            <div class="col col-6">
+            <div class="col-xs-12 col-lg-6">
                 <div class="text-center">
                    <h2 class="roboto-black">Camp Title</h2><br>
                 </div>
@@ -67,7 +69,7 @@ $imgList = [
 <section id="invitation">
     <div class="container">
         <div class="row">
-            <div class="col col-6">
+            <div class="col-xs-12 col-lg-6">
                 <div class="flex-wrapper">
                     <div class="text">
                         <div class="text-center">
@@ -87,7 +89,7 @@ $imgList = [
                     </div>
                 </div>
             </div>
-            <div class="col col-6">
+            <div class="col-xs-12 col-lg-6">
                 <div class="donation-img">
                     <a href="/donation">
                         <img src="/img/donation_small.jpg" alt="" style="max-width: 100%">
@@ -142,7 +144,7 @@ $imgList = [
     <div class="container">
         <div class="row">
             <div class="col col-12">
-                <h2 class="light header headline text-center">Фотогалерея</h2>
+                <h2 class="roboto-black text-center">Фотогалерея</h2>
                 <div class="gallery-box">
                     <div class="splide">
                         <div class="splide__track">
@@ -161,6 +163,5 @@ $imgList = [
     </div>
 </section>
 
-https://themeforest.net/item/saveelife-nonprofit-charity-website-figma-template/screenshots/36454802?index=4
-
-https://help-ukraine.org.ua/en/
+<!--https://themeforest.net/item/saveelife-nonprofit-charity-website-figma-template/screenshots/36454802?index=4-->
+<!--https://help-ukraine.org.ua/en/-->
