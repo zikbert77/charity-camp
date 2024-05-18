@@ -20,6 +20,9 @@ a.btn-custom:hover {
 
 a.btn-custom.big {
     padding: 12px 45px !important;
+}
+
+a.btn-custom.big:not(.nav-link) {
     line-height: 56px;
 }
 
@@ -44,8 +47,8 @@ header nav.navbar {
 }
 
 header nav.navbar a.nav-item {
-    font-size: 18px;
-    margin-left: 15px;
+    /*font-size: 18px;*/
+    /*margin-left: 15px;*/
 }
 
 
@@ -98,8 +101,10 @@ section#invitation .donation-img {
 
 section#donation {
     color: white;
-    background-color: #2a82eb;
     padding: 60px 0;
+    background: #36D1DC;
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
 }
 
 section#donation .donation-methods {
@@ -139,7 +144,7 @@ section#gallery h2 {
 }
 
 section#gallery .gallery-box img {
-    width: 300px;
+    width: 360px;
     border-radius: 15px;
     display: block;
     margin: 0 auto;
