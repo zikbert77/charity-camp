@@ -58,6 +58,126 @@ url("./fonts/icofont.woff") format("woff");
   content: "\f00e";
 }
 
+.icofont-duotone.icofont-info-circle:before
+{
+  content: "\13b45";
+}
+
+.icofont-duotone.icofont-info-circle:after
+{
+  content: "\13b44";
+}
+
+.icofont-long-arrow-right:before
+{
+  content: "\ea94";
+}
+
+.icofont-arrow-right:before
+{
+  content: "\ea5d";
+}
+
+.icofont-arrow-left:before
+{
+  content: "\ea5c";
+}
+
+.icofont-arrow-down:before
+{
+  content: "\ea5b";
+}
+
+.icofont-arrow-up:before
+{
+  content: "\ea5e";
+}
+
+.icofont-long-arrow-down:before
+{
+  content: "\ea92";
+}
+
+.icofont-long-arrow-left:before
+{
+  content: "\ea93";
+}
+
+.icofont-long-arrow-up:before
+{
+  content: "\ea95";
+}
+
+.icofont-curved-right:before
+{
+  content: "\ea75";
+}
+
+.icofont-rounded-right:before
+{
+  content: "\eaa0";
+}
+
+.icofont-thin-right:before
+{
+  content: "\eaca";
+}
+
+.icofont-scroll-bubble-right:before
+{
+  content: "\eaa4";
+}
+
+.icofont-scroll-double-right:before
+{
+  content: "\eaa8";
+}
+
+.icofont-scroll-long-right:before
+{
+  content: "\eaae";
+}
+
+.icofont-scroll-right:before
+{
+  content: "\eab0";
+}
+
+.icofont-curved-left:before
+{
+  content: "\ea74";
+}
+
+.icofont-rounded-left:before
+{
+  content: "\ea9d";
+}
+
+.icofont-scroll-bubble-left:before
+{
+  content: "\eaa3";
+}
+
+.icofont-scroll-double-left:before
+{
+  content: "\eaa7";
+}
+
+.icofont-scroll-left:before
+{
+  content: "\eaab";
+}
+
+.icofont-thin-left:before
+{
+  content: "\eac9";
+}
+
+.icofont-simple-left:before
+{
+  content: "\eab5";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {

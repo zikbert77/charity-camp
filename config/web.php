@@ -48,8 +48,12 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 '/' => 'site/index',
+                [
+                    'pattern' => 'donation/<action>',
+                    'route' => 'donation/<action>',
+                    'defaults' => ['action' => 'index'],
+                ],
                 '/<action>' => 'site/<action>',
-                '/donation/<action>' => 'donation/<action>',
             ],
         ],
         'i18n' => [
