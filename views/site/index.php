@@ -129,7 +129,7 @@ $imgList = [
                     </div>
                     <div class="donation-method hover-shadow">
                         <a href="<?= \yii\helpers\Url::to('donation/cryptocurrency') ?>">
-                            <img src="/img/donation-methods/Bitcoin.svg" alt="Monobank" title="Crypto">
+                            <img src="/img/donation-methods/Bitcoin.svg" alt="Cryptocurrency" title="Cryptocurrency">
                             <span>Crypto</span>
                         </a>
                     </div>

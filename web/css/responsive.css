@@ -48,6 +48,10 @@
       margin: 50px 0;
    }
 
+   section#donation-methods h1 {
+      font-size: 45px;
+   }
+
    section#donation-methods .donation-method {
       margin-bottom: 25px;
    }

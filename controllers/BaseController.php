@@ -6,6 +6,7 @@ use app\components\Language;
 use Yii;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
+
 class BaseController extends Controller
 {
     /**

@@ -29,6 +29,11 @@
                             <i class="icofont-duotone icofont-duplicate-alt"></i>
                         </span>
                     </div>
+                    <div class="note">
+                        <i class="icofont-duotone icofont-info-circle"></i> <?= Yii::t('app', 'To this address, you can only send {type} assets.<br>Other assets will be lost forever.', [
+                            'type' => 'Ethereum (ETH)'
+                        ]) ?>
+                    </div>
                     <div class="qr-code">
                         <img src="/img/donation-methods/qr-eth.jpeg" alt="">
                     </div>
@@ -49,6 +54,11 @@
                               data-bs-title="Copy wallet address">
                             <i class="icofont-duotone icofont-duplicate-alt"></i>
                         </span>
+                    </div>
+                    <div class="note">
+                        <i class="icofont-duotone icofont-info-circle"></i> <?= Yii::t('app', 'To this address, you can only send {type} assets.<br>Other assets will be lost forever.', [
+                            'type' => 'Fantom (FTM)'
+                        ]) ?>
                     </div>
                     <div class="qr-code">
                         <img src="/img/donation-methods/qr.jpg" alt="">
@@ -71,6 +81,11 @@
                             <i class="icofont-duotone icofont-duplicate-alt"></i>
                         </span>
                     </div>
+                    <div class="note">
+                        <i class="icofont-duotone icofont-info-circle"></i> <?= Yii::t('app', 'To this address, you can only send {type} assets.<br>Other assets will be lost forever.', [
+                            'type' => 'Avalanche C-Chain (AVAX)'
+                        ]) ?>
+                    </div>
                     <div class="qr-code">
                         <img src="/img/donation-methods/qr-avax.jpeg" alt="">
                     </div>
@@ -91,6 +106,11 @@
                               data-bs-title="Copy wallet address">
                             <i class="icofont-duotone icofont-duplicate-alt"></i>
                         </span>
+                    </div>
+                    <div class="note">
+                        <i class="icofont-duotone icofont-info-circle"></i> <?= Yii::t('app', 'To this address, you can only send {type} assets.<br>Other assets will be lost forever.', [
+                            'type' => 'XRP (XRP)'
+                        ]) ?>
                     </div>
                     <div class="qr-code">
                         <img src="/img/donation-methods/qr-xrp.jpeg" alt="">

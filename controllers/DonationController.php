@@ -6,7 +6,12 @@ use yii\web\Controller;
 
 class DonationController extends BaseController
 {
-    public $defaultAction = 'cryptocurrency';
+    public $defaultAction = 'index';
+
+    public function actionIndex(): string
+    {
+        return $this->render('index');
+    }
 
     public function actionCryptocurrency(): string
     {
