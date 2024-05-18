@@ -46,9 +46,12 @@ header nav.navbar {
     height: 90px;
 }
 
-header nav.navbar a.nav-item {
-    /*font-size: 18px;*/
-    /*margin-left: 15px;*/
+header nav.navbar ul.navbar-nav.language-picker {
+    margin-right: 25px;
+}
+
+header nav.navbar ul.navbar-nav.language-picker span {
+    border-radius: 2px;
 }
 
 
@@ -153,13 +156,19 @@ section#gallery .gallery-box img {
 
 /* Donation Page */
 section#donation-methods {
-    margin: 100px 0;
+    margin: 75px 0;
 }
 
-section#donation-methods {
-    h2 {
-        margin-bottom: 30px;
-    }
+section#donation-methods h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section#donation-methods h2 {
+    margin-bottom: 50px;
 }
 
 section#donation-methods .donation-method {

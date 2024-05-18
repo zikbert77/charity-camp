@@ -7,6 +7,7 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'en-Us',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -48,6 +49,20 @@ $config = [
             'rules' => [
                 '/' => 'site/index',
                 '/<action>' => 'site/<action>',
+                '/donation/<action>' => 'donation/<action>',
+            ],
+        ],
+        'i18n' => [
+            'translations' => [
+                'app*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages',
+                    'sourceLanguage' => 'en-US',
+                    'fileMap' => [
+                        'app' => 'main.php',
+                        'app/nav' => 'nav.php',
+                    ],
+                ],
             ],
         ],
     ],

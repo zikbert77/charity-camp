@@ -11,9 +11,6 @@ use yii\web\AssetBundle;
 
 /**
  * Main application asset bundle.
- *
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @since 2.0
  */
 class AppAsset extends AssetBundle
 {
@@ -23,12 +20,15 @@ class AppAsset extends AssetBundle
         'css/site.css',
         'css/fonts.css',
         'css/responsive.css',
+        'plugins/bootstrap/bootstrap.min.css',
         'plugins/icofont/icofont.min.css',
         'plugins/splide/splide.min.css',
         'plugins/fancybox/fancybox.min.css',
+        'plugins/flag-icons/css/flag-icons.min.css',
     ];
     public $js = [
         'js/index.js',
+        'plugins/bootstrap/bootstrap.min.js',
         'plugins/splide/splide.min.js',
         'plugins/fancybox/fancybox.min.js',
     ];

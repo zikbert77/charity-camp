@@ -29,7 +29,7 @@ $imgList = [
                     <div class="text-center">
                         We are worldwide ministry in which millions of children reap the benefits of man's clear.
                         Bringing people together to end poverty for good. <br><br><br>
-                        <a href="/donate" class="btn-custom big">Donate now</a>
+                        <a href="/donation" class="btn-custom big">Donate now</a>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@ $imgList = [
                         </a>
                     </div>
                     <div class="donation-method hover-shadow">
-                        <a href="">
+                        <a href="<?= \yii\helpers\Url::to('donation/cryptocurrency') ?>">
                             <img src="/img/donation-methods/Bitcoin.svg" alt="Monobank" title="Crypto">
                             <span>Crypto</span>
                         </a>

@@ -34,4 +34,21 @@ $(document).ready(function() {
             console.error(e.error)
         }
     })
+
+    $(document).on('click', '.action-change-language', function () {
+        $.ajax({
+            url: '/change-language',
+            method: 'POST',
+            data: {
+                key: $(this).data('language-id')
+            },
+            success: function (response) {
+                window.location.reload();
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.error(jqXHR, textStatus)
+                alert('Error. Please try again later');
+            }
+        });
+    })
 });

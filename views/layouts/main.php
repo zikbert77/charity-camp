@@ -4,6 +4,7 @@
 /** @var string $content */
 
 use app\assets\AppAsset;
+use app\components\Language;
 use app\widgets\Alert;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
@@ -18,6 +19,8 @@ $this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, 
 $this->registerMetaTag(['name' => 'description', 'content' => $this->params['meta_description'] ?? '']);
 $this->registerMetaTag(['name' => 'keywords', 'content' => $this->params['meta_keywords'] ?? '']);
 $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii::getAlias('@web/favicon.ico')]);
+
+$selectedLanguage = Language::getSelected();
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -25,9 +28,6 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <head>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,37 +38,38 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <?php $this->beginBody() ?>
 
 <header>
-<!--    <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
-<!--        <div class="container">-->
-<!--            <a class="navbar-brand" href="/">Camp</a>-->
-<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--                <span class="navbar-toggler-icon"></span>-->
-<!--            </button>-->
-<!--            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">-->
-<!--                <div class="navbar-nav mr-auto">-->
-<!--                    <a class="nav-item nav-link" href="#">About</a>-->
-<!--                </div>-->
-<!--                <a class="nav-item nav-link btn-custom" href="/donation">Make a Donation</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </nav>-->
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <a class="navbar-brand" href="#">Camp</a>
+            <a class="navbar-brand" href="/">Camp</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/"><?= Yii::t('app/nav', 'Home') ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About Us</a>
+                        <a class="nav-link" href="/about"><?= Yii::t('app/nav', 'About Us') ?></a>
                     </li>
                 </ul>
-                <a class="nav-item nav-link btn-custom big" href="/donation">Make a Donation</a>
+                <ul class="navbar-nav language-picker">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="fi fi-<?= Language::getIconCode($selectedLanguage) ?>"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <?php foreach (array_diff(Language::AVAILABLE_LANGUAGE_KEYS, [$selectedLanguage]) as $language): ?>
+                                <li>
+                                    <a class="dropdown-item action-change-language" href="#" data-language-id="<?= $language ?>">
+                                        <span class="fi fi-<?= Language::getIconCode($language) ?>"></span> <?= Language::getTitle($language) ?>
+                                    </a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="nav-item nav-link btn-custom big" href="/donation"><?= Yii::t('app', 'Make a Donation') ?></a>
             </div>
         </div>
     </nav>
@@ -81,7 +82,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <footer id="footer" class="mt-auto py-3 bg-light">
     <div class="container">
         <div class="row text-muted">
-            <div class="col-xs-12 col-md-4 text-center text-md-start order-3 order-md-1">
+            <div class="col col-xs-6 col-md-4 text-center text-md-start order-2 order-md-1">
                 <div class="info">
                     <div class="brand">
                         &copy; My Company <?= date('Y') ?><br>
@@ -97,7 +98,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-4 text-center order-1 order-md-2">
+            <div class="col col-xs-6 col-md-4 text-center order-3 order-md-2">
                 <div class="contacts">
                     <div class="header">
                         <h4>Our Contacts</h4>
@@ -110,10 +111,10 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     <div class="social-networks"></div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-4 text-right order-2 order-md-3">
+            <div class="col-xs-12 col-md-4 text-right order-1 order-md-3">
                 <div class="links">
                     <div class="link">
-                        <a href="" class="btn-custom big">Make a donation</a>
+                        <a href="/donation" class="btn-custom big">Make a donation</a>
                     </div>
                 </div>
             </div>

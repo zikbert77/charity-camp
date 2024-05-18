@@ -43,7 +43,23 @@
    }
 
 
-   footer .info {
+   /* Donation Page */
+   section#donation-methods {
+      margin: 50px 0;
+   }
+
+   section#donation-methods .donation-method {
+      margin-bottom: 25px;
+   }
+
+   section#donation-methods .donation-method .qr-code img {
+      width: 100%;
+      height: auto;
+   }
+
+
+
+   footer .info, footer .contacts {
       margin-top: 25px;
    }
 

@@ -2,15 +2,15 @@
 
 namespace app\controllers;
 
+use app\components\bots\TelegramBot;
+use app\components\Language;
 use Yii;
 use yii\filters\AccessControl;
-use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
-use app\models\ContactForm;
 
-class SiteController extends Controller
+class SiteController extends BaseController
 {
     /**
      * {@inheritdoc}
@@ -64,9 +64,23 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
-    public function actionDonation()
+    public function actionChangeLanguage()
     {
-        return $this->render('donation');
+        try {
+            $key = Yii::$app->request->post('key', Language::EN);
+            if (!in_array($key, Language::AVAILABLE_LANGUAGE_KEYS)) {
+                throw new \Exception('Undefined language key');
+            }
+
+            $cookies = Yii::$app->response->cookies;
+            $cookies->add(new \yii\web\Cookie([
+                'name' => 'language',
+                'value' => $key,
+                'expire' => time() + (60*60*24*365),
+            ]));
+        } catch (\Throwable $exception) {
+            TelegramBot::sendException($exception);
+        }
     }
 
     /**
@@ -101,24 +115,6 @@ class SiteController extends Controller
         Yii::$app->user->logout();
 
         return $this->goHome();
-    }
-
-    /**
-     * Displays contact page.
-     *
-     * @return Response|string
-     */
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
     }
 
     /**
