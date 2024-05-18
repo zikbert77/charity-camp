@@ -33,6 +33,11 @@ a.btn-custom.big {
     font-size: 18px;
 }
 
+.custom-tooltip {
+    --bs-tooltip-bg: #2a82eb !important;
+    --bs-tooltip-color: white;
+}
+
 
 header nav.navbar {
     height: 90px;
@@ -63,6 +68,10 @@ section#about {
     margin: 100px 0;
 }
 
+section#about .about-img {
+    padding: 25px;
+}
+
 section#about .about-img img {
     width: 100%;
     border-radius: 30px;
@@ -83,7 +92,7 @@ section#invitation .flex-wrapper {
 }
 
 section#invitation .donation-img {
-    padding: 40px;
+    padding: 75px;
 }
 
 
@@ -135,6 +144,61 @@ section#gallery .gallery-box img {
     display: block;
     margin: 0 auto;
 }
+
+
+/* Donation Page */
+section#donation-methods {
+    margin: 100px 0;
+}
+
+section#donation-methods {
+    h2 {
+        margin-bottom: 30px;
+    }
+}
+
+section#donation-methods .donation-method {
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+section#donation-methods .donation-method .logo {
+    text-align: center;
+}
+
+section#donation-methods .donation-method .logo img {
+    width: 50px;
+}
+
+section#donation-methods .donation-method .title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section#donation-methods .donation-method .wallet {
+    text-align: center;
+    word-break: break-all;
+    margin: 10px 0;
+}
+
+section#donation-methods .donation-method .wallet span.action-copy-wallet-address {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+section#donation-methods .donation-method .qr-code {
+    text-align: center;
+}
+
+section#donation-methods .donation-method .qr-code img {
+    width: auto;
+    height: 220px;
+}
+
 
 
 footer a {

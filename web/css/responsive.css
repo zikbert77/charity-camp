@@ -1,6 +1,7 @@
 @media screen and (max-width: 500px) {
    section#head {
-      padding: 100px 0;
+      padding: 75px 0;
+      background-size: auto 100%;
    }
 
    section#head .head-text-wrapper {
@@ -17,10 +18,15 @@
       margin-bottom: 50px;
    }
 
+   section#about {
+      text-align: justify;
+   }
+
 
    section#invitation {
       margin: 50px 0;
       padding: 0;
+      text-align: justify;
    }
 
 
