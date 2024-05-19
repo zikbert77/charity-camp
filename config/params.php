@@ -4,6 +4,7 @@ return [
     'adminEmail' => 'admin@example.com',
     'senderEmail' => 'noreply@example.com',
     'senderName' => 'Example.com mailer',
+    'siteName' => 'Charity Camp',
 
 
     'tg_token' => '6814817056:AAE5qihj4yDYOCCmqLmuYUSI8UsjQnqrF6M',

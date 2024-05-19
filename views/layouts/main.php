@@ -10,6 +10,7 @@ use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 
@@ -47,10 +48,13 @@ $selectedLanguage = Language::getSelected();
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/"><?= Yii::t('app/nav', 'Home') ?></a>
+                        <a class="nav-link <?= Yii::$app->controller->action->id == 'index' ? 'active' : '' ?>" aria-current="page" href="/"><?= Yii::t('app/nav', 'Home') ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about"><?= Yii::t('app/nav', 'About Us') ?></a>
+                        <a class="nav-link <?= Yii::$app->controller->action->id == 'active' ? 'active' : '' ?>" href="<?= Url::to('about') ?>"><?= Yii::t('app/nav', 'About Us') ?></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= Yii::$app->controller->action->id == 'policy' ? 'active' : '' ?>" href="<?= Url::to('policy') ?>"><?= Yii::t('app/nav', 'Usage Policy') ?></a>
                     </li>
                 </ul>
                 <ul class="navbar-nav language-picker">
@@ -101,7 +105,7 @@ $selectedLanguage = Language::getSelected();
             <div class="col col-xs-6 col-md-4 text-center order-3 order-md-2">
                 <div class="contacts">
                     <div class="header">
-                        <h4>Our Contacts</h4>
+                        <h4><?= Yii::t('app', 'Our Contacts') ?></h4>
                     </div>
                     <div class="general">
                         <span>м.Луцьк, Волі 14б</span>
@@ -114,7 +118,7 @@ $selectedLanguage = Language::getSelected();
             <div class="col-xs-12 col-md-4 text-right order-1 order-md-3">
                 <div class="links">
                     <div class="link">
-                        <a href="/donation" class="btn-custom big">Make a donation</a>
+                        <a href="/donation" class="btn-custom big"><?= Yii::t('app', 'Make a donation') ?></a>
                     </div>
                 </div>
             </div>

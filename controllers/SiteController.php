@@ -126,4 +126,9 @@ class SiteController extends BaseController
     {
         return $this->render('about');
     }
+
+    public function actionPolicy()
+    {
+        return $this->render('policy');
+    }
 }

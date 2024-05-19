@@ -50,6 +50,10 @@ header nav.navbar {
     height: 90px;
 }
 
+header nav.navbar ul.navbar-nav li.nav-item {
+    margin-left: 25px;
+}
+
 header nav.navbar ul.navbar-nav.language-picker {
     margin-right: 25px;
 }
