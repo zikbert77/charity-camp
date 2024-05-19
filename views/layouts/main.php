@@ -39,7 +39,7 @@ $selectedLanguage = Language::getSelected();
 <?php $this->beginBody() ?>
 
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">Camp</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,6 +60,7 @@ $selectedLanguage = Language::getSelected();
                 <ul class="navbar-nav language-picker">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="mobile-title"><?= Language::getTitle($selectedLanguage) ?>&nbsp;</span>
                             <span class="fi fi-<?= Language::getIconCode($selectedLanguage) ?>"></span>
                         </a>
                         <ul class="dropdown-menu">

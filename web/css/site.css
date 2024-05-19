@@ -1,7 +1,3 @@
-html, body {
-    height: 100%;
-}
-
 a {
     text-decoration: none !important;
 }
@@ -58,7 +54,11 @@ header nav.navbar ul.navbar-nav.language-picker {
     margin-right: 25px;
 }
 
-header nav.navbar ul.navbar-nav.language-picker span {
+header nav.navbar ul.navbar-nav.language-picker .mobile-title {
+    display: none;
+}
+
+header nav.navbar ul.navbar-nav.language-picker span.fi {
     border-radius: 2px;
 }
 
@@ -89,6 +89,25 @@ section#about .about-img {
 section#about .about-img img {
     width: 100%;
     border-radius: 30px;
+}
+
+
+section#statistic .stat-wrapper {
+    background: #36D1DC;
+    background: -webkit-linear-gradient(to left, #5B86E5, #36D1DC);
+    background: linear-gradient(to left, #5B86E5, #36D1DC);
+    color: white;
+    border-radius: 25px;
+    padding: 25px 35px;
+}
+
+section#statistic .stat-wrapper .stat-number {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+section#statistic .stat-wrapper span.stat-description {
+    font-size: 13px;
 }
 
 
