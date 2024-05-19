@@ -2,6 +2,8 @@
 /**
  * @var \yii\web\View $this
  */
+
+$this->title = 'Donation';
 ?>
 
 <section id="donation-methods">

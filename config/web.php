@@ -65,6 +65,8 @@ $config = [
                     'fileMap' => [
                         'app' => 'main.php',
                         'app/nav' => 'nav.php',
+                        'app/privacy_policy' => 'privacy_policy.php',
+                        'app/cookies_policy' => 'cookies_policy.php',
                     ],
                 ],
             ],

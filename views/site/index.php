@@ -2,7 +2,7 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'My Yii Application';
+$this->title = 'Charity Camp';
 
 $imgList = [
         '/img/childrens6.jpg',
@@ -144,7 +144,7 @@ $imgList = [
     <div class="container">
         <div class="row">
             <div class="col col-12">
-                <h2 class="roboto-black text-center">Фотогалерея</h2>
+                <h2 class="roboto-black text-center"><?= Yii::t('app', 'Photos') ?></h2>
                 <div class="gallery-box">
                     <div class="splide">
                         <div class="splide__track">
@@ -165,3 +165,4 @@ $imgList = [
 
 <!--https://themeforest.net/item/saveelife-nonprofit-charity-website-figma-template/screenshots/36454802?index=4-->
 <!--https://help-ukraine.org.ua/en/-->
+<!--https://cryptologos.cc/-->
