@@ -4,23 +4,9 @@
  */
 
 $this->title = 'Donation';
+
+$this->registerCssFile('/css/footer-at-bottom.css');
 ?>
-
-<style>
-    html, body {
-        min-height: 100%;
-    }
-
-    body {
-        position: relative;
-    }
-
-    footer {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
-</style>
 
 <section id="donation-methods">
     <div class="container">

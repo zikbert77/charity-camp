@@ -41,9 +41,17 @@ a.btn-custom.big:not(.nav-link) {
     --bs-tooltip-color: white;
 }
 
+.site-error {
+    margin: 50px 0;
+}
+
 
 header nav.navbar {
     height: 90px;
+
+    -webkit-box-shadow: 0px 8px 60px -13px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 8px 60px -13px rgba(0,0,0,0.15);
+    box-shadow: 0px 8px 60px -13px rgba(0,0,0,0.15);
 }
 
 header nav.navbar ul.navbar-nav li.nav-item {
@@ -103,19 +111,18 @@ section#statistic .stat-wrapper {
 
 section#statistic .stat-wrapper .stat-number {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 section#statistic .stat-wrapper span.stat-description {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 
 section#invitation {
     margin: 100px 0;
-    /*color: white;*/
     padding: 25px;
-    /*background-color: #2a82eb;*/
 }
 
 section#invitation .flex-wrapper {

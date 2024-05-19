@@ -75,7 +75,7 @@ $imgList = [
                     <span class="headline roboto-light">Our modest numbers</span>
                 </div>
                 <br>
-                <div class="stat-wrapper">
+                <div class="stat-wrapper shadow">
                     <div class="row">
                         <div class="col-6 col-md-3">
                             <div class="stat-number">100+</div>

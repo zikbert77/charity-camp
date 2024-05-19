@@ -7,12 +7,15 @@
       margin-left: 0;
    }
 
+   header nav.navbar ul.navbar-nav.language-picker {
+      margin-right: 0;
+   }
+
    header nav.navbar ul.navbar-nav.language-picker .mobile-title {
       display: inline-block;
    }
 
    header nav.navbar .collapse a.btn-custom {
-      text-align: center;
       margin: 10px;
    }
 
