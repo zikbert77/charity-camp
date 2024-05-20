@@ -66,6 +66,41 @@ $imgList = [
 </section>
 
 
+<section id="statistic">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <h2 class="roboto-black header">A little bit about passed work</h2>
+                    <span class="headline roboto-light">Our modest numbers</span>
+                </div>
+                <br>
+                <div class="stat-wrapper shadow">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="stat-number">100+</div>
+                            <span class="stat-description">Children invited</span>
+                        </div>
+                        <div class="col-6 col-md-3 text-center">
+                            <div class="stat-number">$12000+</div>
+                            <span class="stat-description">Collected funds</span>
+                        </div>
+                        <div class="col-6 col-md-3 text-center">
+                            <div class="stat-number">500+</div>
+                            <span class="stat-description">Donations</span>
+                        </div>
+                        <div class="col-6 col-md-3 text-end">
+                            <div class="stat-number">32</div>
+                            <span class="stat-description">Volunteers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <section id="invitation">
     <div class="container">
         <div class="row">
@@ -163,6 +198,6 @@ $imgList = [
     </div>
 </section>
 
-<!--https://themeforest.net/item/saveelife-nonprofit-charity-website-figma-template/screenshots/36454802?index=4-->
-<!--https://help-ukraine.org.ua/en/-->
-<!--https://cryptologos.cc/-->
+<!-- https://themeforest.net/item/saveelife-nonprofit-charity-website-figma-template/screenshots/36454802?index=4 -->
+<!-- https://help-ukraine.org.ua/en/ -->
+<!-- https://cryptologos.cc/ -->

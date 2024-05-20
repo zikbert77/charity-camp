@@ -1,11 +1,32 @@
 @media screen and (max-width: 500px) {
+   header nav.navbar {
+      height: auto;
+   }
+
+   header nav.navbar ul.navbar-nav li.nav-item {
+      margin-left: 0;
+   }
+
+   header nav.navbar ul.navbar-nav.language-picker {
+      margin-right: 0;
+   }
+
+   header nav.navbar ul.navbar-nav.language-picker .mobile-title {
+      display: inline-block;
+   }
+
+   header nav.navbar .collapse a.btn-custom {
+      margin: 10px;
+   }
+
+
    section#head {
       padding: 75px 0;
       background-size: auto 100%;
    }
 
    section#head .head-text-wrapper {
-      margin: 0;
+      margin: 0 15px;
    }
 
 
@@ -14,7 +35,7 @@
    }
 
    section#about .about-img {
-      /*padding: 0 15px;*/
+      padding: 0 15px;
       margin-bottom: 50px;
    }
 
@@ -23,10 +44,23 @@
    }
 
 
+   section#statistic .stat-wrapper .row div:nth-child(3) {
+      text-align: left !important;
+   }
+
+   section#statistic .stat-wrapper .row div:nth-child(3), section#statistic .stat-wrapper .row div:nth-child(4) {
+      margin-top: 20px;
+   }
+
+
    section#invitation {
       margin: 50px 0;
       padding: 0;
       text-align: justify;
+   }
+
+   section#invitation .donation-img {
+      padding: 50px;
    }
 
 

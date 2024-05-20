@@ -39,9 +39,9 @@ $selectedLanguage = Language::getSelected();
 <?php $this->beginBody() ?>
 
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="/">Camp</a>
+            <a class="navbar-brand roboto-black" href="/">Camp</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -60,6 +60,7 @@ $selectedLanguage = Language::getSelected();
                 <ul class="navbar-nav language-picker">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="mobile-title"><?= Language::getTitle($selectedLanguage) ?>&nbsp;</span>
                             <span class="fi fi-<?= Language::getIconCode($selectedLanguage) ?>"></span>
                         </a>
                         <ul class="dropdown-menu">
@@ -73,7 +74,7 @@ $selectedLanguage = Language::getSelected();
                         </ul>
                     </li>
                 </ul>
-                <a class="nav-item nav-link btn-custom big" href="/donation"><?= Yii::t('app', 'Make a Donation') ?></a>
+                <a class="nav-item nav-link btn-custom big text-center" href="/donation"><?= Yii::t('app', 'Make a Donation') ?></a>
             </div>
         </div>
     </nav>

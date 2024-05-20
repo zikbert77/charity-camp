@@ -4,6 +4,8 @@
  */
 
 $this->title = 'Donation';
+
+$this->registerCssFile('/css/footer-at-bottom.css');
 ?>
 
 <section id="donation-methods">
