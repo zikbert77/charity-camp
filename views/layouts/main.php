@@ -51,7 +51,7 @@ $selectedLanguage = Language::getSelected();
                         <a class="nav-link <?= Yii::$app->controller->action->id == 'index' ? 'active' : '' ?>" aria-current="page" href="/"><?= Yii::t('app/nav', 'Home') ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= Yii::$app->controller->action->id == 'active' ? 'active' : '' ?>" href="<?= Url::to('about') ?>"><?= Yii::t('app/nav', 'About Us') ?></a>
+                        <a class="nav-link <?= Yii::$app->controller->action->id == 'about' ? 'active' : '' ?>" href="<?= Url::to('about') ?>"><?= Yii::t('app/nav', 'About Us') ?></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= Yii::$app->controller->action->id == 'policy' ? 'active' : '' ?>" href="<?= Url::to('policy') ?>"><?= Yii::t('app/nav', 'Usage Policy') ?></a>

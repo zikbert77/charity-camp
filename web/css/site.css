@@ -88,15 +88,19 @@ section#head .head-text-wrapper {
 
 section#about {
     margin: 100px 0;
+    text-align: justify;
 }
 
 section#about .about-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 25px;
 }
 
 section#about .about-img img {
-    width: 100%;
-    border-radius: 30px;
+    width: 70%;
+    border-radius: 50%;
 }
 
 
@@ -123,6 +127,7 @@ section#statistic .stat-wrapper span.stat-description {
 section#invitation {
     margin: 100px 0;
     padding: 25px;
+    text-align: justify;
 }
 
 section#invitation .flex-wrapper {
@@ -288,6 +293,12 @@ section#donation-methods .donation-methods-wrapper .donation-method-row .arrow {
     font-size: 28px;
 }
 
+
+/* About Us page */
+.site-about {
+    text-align: justify;
+    margin: 50px 0;
+}
 
 
 footer a {

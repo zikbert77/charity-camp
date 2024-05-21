@@ -43,7 +43,7 @@ $imgList = [
         <div class="row">
             <div class="col-xs-12 col-lg-6">
                 <div class="about-img">
-                    <img src="img/24.png" class="shadow" alt="">
+                    <img src="img/24.webp" class="shadow" alt="">
                 </div>
             </div>
             <div class="col-xs-12 col-lg-6">
