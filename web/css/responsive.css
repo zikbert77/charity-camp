@@ -39,8 +39,8 @@
       margin-bottom: 50px;
    }
 
-   section#about {
-      text-align: justify;
+   section#about .about-img img {
+      width: 90%;
    }
 
 
